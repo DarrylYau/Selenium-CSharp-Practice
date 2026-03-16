@@ -1,0 +1,45 @@
+# -----------------------------
+# Visual Studio / C# Projects
+# -----------------------------
+
+# Visual Studio workspace / local settings
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+bin/
+obj/
+
+# Test results
+TestResults/
+*.trx
+*.log
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+
+# Rider IDE
+.idea/
+
+# Temporary / cache files
+*.cache
+*.pidb
+*.booproj
+*.svd
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Selenium / WebDriver specific
+# Screenshots/
+
+# Other temp files
+*.tmp
+*.bak
+*.backup

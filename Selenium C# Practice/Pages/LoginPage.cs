@@ -14,11 +14,25 @@ public class LoginPage : BasePage
     private By password = By.Id("password");
     private By loginButton = By.Id("login-button");
 
+    private By errorMessage = By.CssSelector("[data-test='error']");
+
 
     public void Login (string user, string pass)
     {
         Type(username, user);
         Type(password, pass);
         Click(loginButton);
+    }
+
+    public bool IsErrorDisplayed()
+    {
+        try
+        {
+            return WaitForElement(errorMessage).Displayed;
+        }
+        catch
+        {
+            return false;
+        }
     }
 }

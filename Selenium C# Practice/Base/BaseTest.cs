@@ -11,7 +11,7 @@ public class BaseTest
     [SetUp]
     public void Setup()
     {
-        Console.WriteLine("Setup executed");
+        TestContext.Out.WriteLine("Setup executed");
 
         driver = new ChromeDriver();
         Console.WriteLine("Driver created");

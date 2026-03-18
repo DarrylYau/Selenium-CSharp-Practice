@@ -21,7 +21,7 @@ This project demonstrates UI automation using Selenium WebDriver with C# and NUn
 
 ## How to Run
 ### Prerequisite
-- Install .NET SDK
+- Install .NET SDK 10.0
 - Install Chrome browser (for ChromeDriver)
 - Ensure NuGet packages are restored
 

@@ -37,7 +37,13 @@ packages/
 Thumbs.db
 
 # Selenium / WebDriver specific
-# Screenshots/
+# Ignore generated reports and screenshots
+Reports/
+Screenshots/
+
+# Ignore HTML report files (ExtentReports)
+*.html
+
 
 # Other temp files
 *.tmp

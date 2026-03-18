@@ -26,6 +26,9 @@ public class LoginPage : BasePage
 
     public bool IsErrorDisplayed()
     {
+        var element = WaitForElement(errorMessage);
+        return element != null && element.Displayed;
+        /*
         try
         {
             return WaitForElement(errorMessage).Displayed;
@@ -34,5 +37,6 @@ public class LoginPage : BasePage
         {
             return false;
         }
+        */
     }
 }

@@ -2,11 +2,16 @@
   {
     "username": "standard_user",
     "password": "secret_sauce",
-    "isValid":  true
+    "expectedSuccess":  true
   },
   {
     "username": "locked_out_user",
     "password": "secret_sauce",
-    "isValid": false
+    "expectedSuccess": false
+  },
+  {
+    "username": "fail_user",
+    "password": "secret_sauce",
+    "expectedSuccess": true
   }
 ]

@@ -10,6 +10,7 @@ public class InventoryPage: BasePage
     
     public bool IsInventoryPageDisplayed()
     {
-        return WaitForElement(inventoryContainer).Displayed;
+        var element = WaitForElement(inventoryContainer);
+        return element!= null && element.Displayed;
     }
 }

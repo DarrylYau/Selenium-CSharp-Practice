@@ -17,7 +17,20 @@ public class BasePage
 
     protected IWebElement WaitForElement(By locator)
     {
-        return wait.Until(d=> d.FindElement(locator));
+        return WaitHelper.WaitForElement(driver, locator);
+       /* return wait.Until(d =>
+        {
+            try
+            {
+                var element = d.FindElement(locator);
+                return element.Displayed ? element : null;
+
+            }
+            catch (NoSuchElementException)
+            {
+                return null;
+            }
+        });  */      
     }
     
     protected void Click(By locator)
